@@ -43,7 +43,7 @@ function todoPending () {
     let todoItem="";
     todoArray.forEach((todo, index) => {
         if (todo.completed == 0) {
-            todoItem += `<li id="${todo.id}" index="${index}" completed="${todo.completed}" class="${todo.class}">${todo.content}</li><button>X</button>`;
+            todoItem += `<li id="${todo.id}" index="${index}" completed="${todo.completed}" class="${todo.class}">${todo.content}</li><button class="removeTodo">X</button>`;
         }
     })
     todoList.innerHTML = todoItem;
@@ -56,7 +56,7 @@ function todoCompleted () {
     let todoItem="";
     todoArray.forEach((todo, index) => {
         if (todo.completed == 1) {
-            todoItem += `<li id="${todo.id}" index="${index}" completed="${todo.completed}" class="${todo.class}">${todo.content}</li><button>X</button>`;
+            todoItem += `<li id="${todo.id}" index="${index}" completed="${todo.completed}" class="${todo.class}">${todo.content}</li><button class="removeTodo">X</button>`;
         }
     })
     todoList.innerHTML = todoItem;
