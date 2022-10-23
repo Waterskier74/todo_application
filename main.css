@@ -1,0 +1,157 @@
+/* style to container around the app*/
+.appContent {
+    max-width: 30em;
+    margin: auto;
+    background-color: #C7DDCC;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 10px;
+    padding: 2em;
+}
+
+/* Style the Todo header*/
+header {
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 2px;
+}
+
+
+
+/* Remove margins and padding from the list */
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* remove the bullets in front of each line*/
+ul {
+    list-style: none; 
+ }
+
+/* insert a check next to the todo when complete */
+
+ ul li.checked {
+     background: rgb(7, 203, 238);
+     color: #fff;
+     text-decoration: line-through;
+   }
+ 
+
+   ul li.checked::before {
+     content: '';
+     position: absolute;
+     border-color: black;
+     border-style: solid;
+     border-width: 0 2px 2px 0;
+     top: 10px;
+     left: 16px;
+     transform: rotate(45deg);
+     height: 15px;
+     width: 7px;
+     text-decoration: line-through;
+   }
+
+   ul li::before {
+    content: 'O';
+    position: absolute;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+  }
+
+/* Style the list items */
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+    width:81%;
+    border-radius: 10em;
+    justify-content: space-around;
+    display: inline-block;
+}
+
+ul li:hover {
+    background-color: aqua;
+}
+
+/* style the input */
+input {
+    margin: 0;
+    border-radius: 10em;
+    width: 87%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+}
+
+
+#todoList {
+    max-width: auto;
+}
+
+/* Style the footer of the app */
+#listFooter {
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    font-size: 16px;
+}
+
+#pendingTotal {
+    display:flex;
+    justify-content: space-evenly;
+    width:25%;
+}
+
+#sort {
+    display: flex;
+    justify-content: space-around;
+    width: 75%;
+}
+
+#all:hover, 
+#pending:hover, 
+#complete:hover {
+    background-color: aqua;
+    border-radius: 10px;
+}
+
+/* Style to remove button*/
+.removeTodo {
+    border: none;
+    color: white;
+    background-color: red;
+    padding: 10PX;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+/* Style the add button*/
+#addBtn {
+    border: none;
+    color: white;
+    background-color: green;
+    padding: 10PX;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50%;
+}

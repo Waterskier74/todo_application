@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Application</title>
+    <link rel="stylesheet" href="main.css">
+    <script defer type="module" src="/js/ToDos.js"></script>
+</head>
+<body>
+    <div class="appContent">
+        <header>Todos</header>
+    <main>
+        <div id="todoList">
+            <ul id="toDoElements">
+
+            </ul>
+        </div>
+        <br>
+        <div id="listFooter">
+            <div id="pendingTotal">
+                <p id="totalPending"></p>
+                <p id="incompleteLabel">tasks left</p> 
+            </div>
+            <div id="sort">
+                <p id="all">All.</p>
+                <p id="pending">Active.</p>
+                <p id="complete">Complete.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <br>
+        <input type="text" id="toDoInput" placeholder="New Todo Item....">
+        <button id="addBtn">+</button>       
+    </footer>
+    </div>
+</body>
+</html>
